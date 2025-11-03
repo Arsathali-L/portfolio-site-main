@@ -46,14 +46,14 @@ npm run dev
 
 ## 🚀 Deployment
 
-This portfolio is deployed on Netlify. The live version can be viewed [here](https://salaitsudhakar.netlify.app/).
+This portfolio is deployed on Netlify. The live version can be viewed [here](https://arsh-arsath.netlify.app/).
 
 
 ## 👨‍💻 Author
 
-- Salait Sudhakar
-- [GitHub](https://github.com/SalaitSudhakar)
-- [LinkedIn](https://linkedin.com/in/salaitsudhakar)
+- Arsathali-L
+- [GitHub](https://github.com/Arsathali-L)
+- [LinkedIn](https://www.linkedin.com/in/arsath-ali-l/)
 
 ---
 
