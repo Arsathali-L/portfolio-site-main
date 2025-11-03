@@ -64,11 +64,11 @@ const Hero = () => {
           viewport={{ once: true }}
         >
           <span className="text-4xl lg:text-5xl text-white">I'm a </span>
-          <span className="text-[#FFD700]">MERN Stack Developer | Building full-stack web applications</span>
+          <span className="text-[#FFD700] text-justify">MERN Stack Developer | Building full-stack web applications</span>
         </motion.div>
 
         <motion.p
-          className="lg:text-lg tracking-wide text-gray-300 max-w-xl"
+          className="lg:text-lg tracking-wide text-gray-300 max-w-xl text-justify"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
