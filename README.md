@@ -21,7 +21,7 @@ Welcome to my personal portfolio repository! This project showcases my skills, e
 1.Clone this repository
 
 ```
-git clone https://github.com/SalaitSudhakar/portfolio-site.git
+git clone https://github.com/Arsathali-L/portfolio-site-main.git
 ```
 
 2.Navigate to the project directory
