@@ -90,7 +90,7 @@ const Projects = () => {
                 {project.title}
               </h2>
 
-              <p className="text-gray-300 mb-4 leading-relaxed text-sm sm:text-lg">
+              <p className="text-gray-300 mb-4 leading-relaxed text-sm sm:text-lg text-justify">
                 {project.description}
               </p>
 
