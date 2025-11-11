@@ -111,7 +111,7 @@ const Hero = () => {
 
         {/* Resume Button */}
         <motion.a
-          href="/public/Arsathai_CV.pdf"
+          href="public/Arsathai_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="p-3 flex gap-2 w-64 items-center justify-center font-bold border cursor-pointer border-[#FFD700] text-[#4B0082] rounded-full bg-[#FFD700] hover:bg-transparent hover:text-[#FFD700] transition-all duration-300"
