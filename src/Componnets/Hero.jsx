@@ -110,8 +110,8 @@ const Hero = () => {
         </motion.div>
 
         {/* Resume Button */}
-        <motion.a
-          href="public/Arsathai_CV.pdf"
+        {/* <motion.a
+          href="/public/Arsathai_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="p-3 flex gap-2 w-64 items-center justify-center font-bold border cursor-pointer border-[#FFD700] text-[#4B0082] rounded-full bg-[#FFD700] hover:bg-transparent hover:text-[#FFD700] transition-all duration-300"
@@ -122,7 +122,17 @@ const Hero = () => {
         >
           <span>View Resume</span>
           <FiDownload size={18} className="font-bold" />
+        </motion.a> */}
+        <motion.a
+          href={`${process.env.PUBLIC_URL}/Arsathai_CV.pdf`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-3 flex gap-2 w-64 items-center justify-center font-bold border cursor-pointer border-[#FFD700] text-[#4B0082] rounded-full bg-[#FFD700] hover:bg-transparent hover:text-[#FFD700] transition-all duration-300"
+        >
+          <span>View Resume</span>
+          <FiDownload size={18} className="font-bold" />
         </motion.a>
+
       </div>
 
       {/* Hero Image */}
