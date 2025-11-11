@@ -21,7 +21,7 @@ Welcome to my personal portfolio repository! This project showcases my skills, e
 1.Clone this repository
 
 ```
-git clone https://github.com/SalaitSudhakar/portfolio-site.git
+git clone https://github.com/Arsathali-L/portfolio-site-main.git
 ```
 
 2.Navigate to the project directory
@@ -46,14 +46,14 @@ npm run dev
 
 ## 🚀 Deployment
 
-This portfolio is deployed on Netlify. The live version can be viewed [here](https://salaitsudhakar.netlify.app/).
+This portfolio is deployed on Netlify. The live version can be viewed [here](https://arsh-arsath.netlify.app/).
 
 
 ## 👨‍💻 Author
 
-- Salait Sudhakar
-- [GitHub](https://github.com/SalaitSudhakar)
-- [LinkedIn](https://linkedin.com/in/salaitsudhakar)
+- Arsathali-L
+- [GitHub](https://github.com/Arsathali-L)
+- [LinkedIn](https://www.linkedin.com/in/arsath-ali-l/)
 
 ---
 
