@@ -22,7 +22,7 @@ const socialLinks = [
   },
   {
     name: "Email",
-    href: "https://mail.google.com/mail/u/0/#inbox",
+    href: "mailto:arsathliakath092003@gmail.com",
     icon: MdEmail,
     ariaLabel: "Email Contact",
   },
@@ -40,7 +40,7 @@ const Hero = () => {
           className="text-xl lg:text-2xl mb-2 font-medium text-gray-200"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
           viewport={{ once: true }}
         >
           Hello there! I'm
@@ -50,7 +50,7 @@ const Hero = () => {
           className="text-4xl lg:text-5xl mb-2 font-bold text-white"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
           viewport={{ once: true }}
         >
           L. Arsath Ali
@@ -60,18 +60,20 @@ const Hero = () => {
           className="text-4xl lg:text-5xl font-bold min-h-[3rem] sm:min-h-[4rem]"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.4 }}
           viewport={{ once: true }}
         >
           <span className="text-4xl lg:text-5xl text-white">I'm a </span>
-          <span className="text-[#FFD700] text-justify">MERN Stack Developer | Building full-stack web applications</span>
+          <span className="text-[#FFD700] text-justify">
+            MERN Stack Developer | Building full-stack web applications
+          </span>
         </motion.div>
 
         <motion.p
           className="lg:text-lg tracking-wide text-gray-300 max-w-xl text-justify"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
+          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
           viewport={{ once: true }}
         >
           Building responsive, dynamic, and modern web applications using React,
@@ -112,14 +114,13 @@ const Hero = () => {
           href="/public/Arsathai_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          download="L_ArsathAli_Resume.pdf"
           className="p-3 flex gap-2 w-64 items-center justify-center font-bold border cursor-pointer border-[#FFD700] text-[#4B0082] rounded-full bg-[#FFD700] hover:bg-transparent hover:text-[#FFD700] transition-all duration-300"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 1 }}
           viewport={{ once: true }}
         >
-          <span>Download Resume</span>
+          <span>View Resume</span>
           <FiDownload size={18} className="font-bold" />
         </motion.a>
       </div>
