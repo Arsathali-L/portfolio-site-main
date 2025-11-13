@@ -5,7 +5,7 @@ import passwordManagerImage from "../assets/project/hotel.png";
 import chatAppImage from "../assets/project/movies.png";
 import authAppImage from "../assets/project/e-com.png";
 import expenseTrackerImage from "../assets/project/expense.png";
-import todoListImage from "../assets/project/todo.png";
+import todoListImage from "../assets/project/to-do.png";
 import { FaLink } from "react-icons/fa";
 import "../App.css";
 import { title } from "framer-motion/client";
