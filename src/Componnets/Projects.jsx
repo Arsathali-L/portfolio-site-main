@@ -4,8 +4,11 @@ import Tilt from "react-parallax-tilt";
 import passwordManagerImage from "../assets/project/hotel.png";
 import chatAppImage from "../assets/project/movies.png";
 import authAppImage from "../assets/project/e-com.png";
+import expenseTrackerImage from "../assets/project/expense.png";
+import todoListImage from "../assets/project/todo.png";
 import { FaLink } from "react-icons/fa";
 import "../App.css";
+import { title } from "framer-motion/client";
 
 const projectData = [
   {
@@ -17,6 +20,24 @@ const projectData = [
     demoLink: "https://arshbooking2.netlify.app/",
     frontEndCode: "https://github.com/Arsathali-L/ui-design.git",
     backEndCode: "https://github.com/Arsathali-L/backend-ui.git",
+  },
+  {
+    title: "ToDo List App",
+    image: todoListImage,
+    description:"A full-stack task management application that allows users to register, log in, and manage daily tasks efficiently. The app supports adding, marking complete, and deleting tasks, all synchronized with a secure backend.",
+    techStack: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    demoLink: "https://to-do-arsh.netlify.app/",
+    frontEndCode: "https://github.com/Arsathali-L/to-do-frontend.git",
+    backEndCode: "https://github.com/Arsathali-L/to-do-backend.git",
+  },
+  {
+    title: "expense Tracker App",
+    image: expenseTrackerImage,
+    description:"A full-stack MERN application that helps users manage and track their daily income and expenses. Users can securely register, log in, and record transactions in real-time. The app dynamically calculates total income, total expenses, and balance, displaying detailed summaries and transaction tables with edit/delete options.",
+    techStack: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    demoLink: "https://expense-tracker-arsh.netlify.app/",
+    frontEndCode: "https://github.com/Arsathali-L/frontend.git",
+    backEndCode: "https://github.com/Arsathali-L/backend.git",
   },
   {
     title: "Movie Search App",
@@ -38,6 +59,8 @@ const projectData = [
     frontEndCode: "https://github.com/Arsathali-L/React-1.git",
     backEndCode: "https://github.com/Arsathali-L/React-1.git",
   },
+  
+  
 ];
 
 const Projects = () => {
