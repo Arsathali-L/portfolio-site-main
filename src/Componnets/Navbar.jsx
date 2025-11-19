@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 
 const Navbar = ({ activeSection, setActiveSection }) => {
   const [hamburgerClicked, setHamburgerClicked] = useState(false);
-  const navLinks = ["home", "about", "skills", "projects", "contact"];
+
+  // 🔥 Added "certificates" here
+  const navLinks = ["home", "about", "skills","certificates", "projects", "contact"];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +16,7 @@ const Navbar = ({ activeSection, setActiveSection }) => {
       sections.forEach((section) => {
         const sectionTop = section.offsetTop - 100;
         const sectionHeight = section.offsetHeight;
+
         if (
           window.scrollY >= sectionTop &&
           window.scrollY < sectionTop + sectionHeight
@@ -39,6 +42,7 @@ const Navbar = ({ activeSection, setActiveSection }) => {
       }`}
     >
       <div className="max-w-7xl mx-auto flex gap-1 items-center justify-between text-white font-semibold px-3 sm:px-6 py-3 text-xl">
+
         {/* Logo */}
         <div className="font-bold text-[#FFD700] whitespace-nowrap tracking-tighter drop-shadow-[0_0_8px_rgba(255,215,0,0.3)]">
           {"<"} <span className="text-4xl text-[#FFD700]">A</span> {"/>"}
@@ -110,6 +114,7 @@ const Navbar = ({ activeSection, setActiveSection }) => {
             ))}
           </div>
         </div>
+
       </div>
     </nav>
   );

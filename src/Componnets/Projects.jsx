@@ -8,59 +8,92 @@ import expenseTrackerImage from "../assets/project/expense.png";
 import todoListImage from "../assets/project/to-do.png";
 import { FaLink } from "react-icons/fa";
 import "../App.css";
-import { title } from "framer-motion/client";
 
 const projectData = [
   {
     title: "Hotel Booking App",
     image: passwordManagerImage,
     description:
-      "Built a full-stack hotel booking application using React (frontend) and Node.js + Express (backend). Features include room listings, dynamic routing, and REST API integration.",
-    techStack: ["MongoDB", "Express.js", "React.js", "Node.js", "TailwindCss"],
+      "A responsive MERN-based hostel/hotel booking platform where users can browse rooms, view details, and make secure bookings.",
+    highlights: [
+      "JWT Authentication",
+      "Room listing & details",
+      "Real-time booking flow",
+      "Fully responsive UI",
+    ],
+    techStack: ["MongoDB", "Express.js", "React.js", "Node.js", "TailwindCss","JWT"],
     demoLink: "https://arshbooking2.netlify.app/",
     frontEndCode: "https://github.com/Arsathali-L/ui-design.git",
     backEndCode: "https://github.com/Arsathali-L/backend-ui.git",
   },
+
   {
     title: "ToDo List App",
     image: todoListImage,
-    description:"A full-stack task management application that allows users to register, log in, and manage daily tasks efficiently. The app supports adding, marking complete, and deleting tasks, all synchronized with a secure backend.",
-    techStack: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    description:
+      "A clean and minimal MERN-based to-do app that allows users to manage daily tasks with create, update, and delete functionality.",
+    highlights: [
+      "Create, edit, delete tasks",
+      "Task completion tracking",
+      "MongoDB persistent storage",
+      "Fast and lightweight UI",
+    ],
+    techStack: ["MongoDB", "Express.js", "React.js", "Node.js","CSS"],
     demoLink: "https://to-do-arsh.netlify.app/",
     frontEndCode: "https://github.com/Arsathali-L/to-do-frontend.git",
     backEndCode: "https://github.com/Arsathali-L/to-do-backend.git",
   },
+
   {
-    title: "expense Tracker App",
+    title: "Expense Tracker App",
     image: expenseTrackerImage,
-    description:"A full-stack MERN application that helps users manage and track their daily income and expenses. Users can securely register, log in, and record transactions in real-time. The app dynamically calculates total income, total expenses, and balance, displaying detailed summaries and transaction tables with edit/delete options.",
-    techStack: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    description:
+      "A secure finance tracker that allows users to add, delete, and view income/expense transactions.",
+    highlights: [
+      "Add income & expense entries",
+      "Auto calculation of totals",
+      "JWT-secured routes",
+      "Responsive & simple UI",
+    ],
+    techStack: ["MongoDB", "Express.js", "React.js", "Node.js","CSS","JWT"],
     demoLink: "https://expense-tracker-arsh.netlify.app/",
     frontEndCode: "https://github.com/Arsathali-L/frontend.git",
     backEndCode: "https://github.com/Arsathali-L/backend.git",
   },
+
   {
     title: "Movie Search App",
     image: chatAppImage,
     description:
-      "Developed a real-time movie search app using the OMDB API and React. Included features like responsive design, state management, and routing.",
-    techStack: ["React.js", "API"," TailwindCss"],
+      "Developed a real-time movie search app using the OMDB API and React. Includes search, filtering, and a responsive UI.",
+    highlights: [
+      "Instant movie search",
+      "OMDB API integration",
+      "Responsive clean UI",
+      "State management using hooks",
+    ],
+    techStack: ["React.js", "API", "TailwindCss"],
     demoLink: "https://arshathmoviesearch.netlify.app/",
     frontEndCode: "https://github.com/Arsathali-L/React-movie.git",
     backEndCode: "https://github.com/Arsathali-L/React-movie.git",
   },
-  {
-    title: "e-Commerce App",
-    image: authAppImage,
-    description:
-      "Created a responsive e-commerce UI using React and React Router. Implemented product listing, shopping cart functionality,and client-side routing.",
-    techStack: ["tailwindcss", "React.js", "API"],
-    demoLink: "https://alibabashoping1.netlify.app/",
-    frontEndCode: "https://github.com/Arsathali-L/React-1.git",
-    backEndCode: "https://github.com/Arsathali-L/React-1.git",
-  },
-  
-  
+
+  // {
+  //   title: "e-Commerce App",
+  //   image: authAppImage,
+  //   description:
+  //     "Created a responsive e-commerce UI using React and React Router with product listing and shopping cart functionality.",
+  //   highlights: [
+  //     "Product listing grid",
+  //     "Cart functionality",
+  //     "Add/Remove items",
+  //     "Client-side routing",
+  //   ],
+  //   techStack: ["tailwindcss", "React.js", "API"],
+  //   demoLink: "https://alibabashoping1.netlify.app/",
+  //   frontEndCode: "https://github.com/Arsathali-L/React-1.git",
+  //   backEndCode: "https://github.com/Arsathali-L/React-1.git",
+  // },
 ];
 
 const Projects = () => {
@@ -117,6 +150,16 @@ const Projects = () => {
                 {project.description}
               </p>
 
+              {/* ⭐ HIGHLIGHTS SECTION ADDED HERE ⭐ */}
+              <ul className="mb-4 space-y-1">
+                {project.highlights.map((point, i) => (
+                  <li key={i} className="text-gray-300 text-sm sm:text-base flex">
+                    <span className="text-[#d4af37] mr-2">•</span>
+                    {point}
+                  </li>
+                ))}
+              </ul>
+
               <div className="mb-4">
                 {project.techStack.map((tech, i) => (
                   <span key={i} className="tech-badge">
@@ -162,4 +205,3 @@ const Projects = () => {
 };
 
 export default Projects;
-

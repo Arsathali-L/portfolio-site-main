@@ -9,6 +9,7 @@ import Footer from "./Componnets/Footer";
 import MoveToTop from "./Componnets/MoveToTop";
 import Projects from "./Componnets/Projects";
 import { HashLoader } from "react-spinners";
+import CertificateCarousel from "./Componnets/CertificateCarousel";
 
 const App = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -40,6 +41,7 @@ const App = () => {
       <Hero />
       <About />
       <Skills />
+      <CertificateCarousel />
       <Projects />
       <Contact />
       <Footer />
