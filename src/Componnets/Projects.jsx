@@ -2,14 +2,29 @@ import React from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import passwordManagerImage from "../assets/project/hotel.png";
-import chatAppImage from "../assets/project/movies.png";
-import authAppImage from "../assets/project/e-com.png";
-import expenseTrackerImage from "../assets/project/expense.png";
-import todoListImage from "../assets/project/to-do.png";
+import baby from "../assets/project/baby.png";
+import food from "../assets/project/food.png";
 import { FaLink } from "react-icons/fa";
 import "../App.css";
 
 const projectData = [
+  {
+    title: "baby-e-commerce",
+    image: baby,
+    description:
+      "A fully responsive e-commerce web app designed for baby products. Users can browse categories, view product details, manage their cart, and make secure payments using Stripe. Smooth UI interactions and real-time product updates enhance the complete shopping experience.",
+    highlights: [
+      "Product listing with dynamic categories",
+      "Add to Cart & real-time cart management",
+      "Stripe payment gateway integration",
+      "User authentication & protected checkout",
+      "Fully responsive modern UI"
+    ],
+    techStack: ["React", "Node.js", "Express", "MongoDB", "JWT", "tailwindcss","stripe"],
+    demoLink: "https://baby-shop-e-commerse-client.vercel.app/",
+    frontEndCode: "https://github.com/Arsathali-L/Baby-Shop-E-Commerse-front.git",
+    backEndCode: "https://github.com/Arsathali-L/babyshop-E-Commerce-back.git",
+  },
   {
     title: "Hotel Booking App",
     image: passwordManagerImage,
@@ -28,72 +43,24 @@ const projectData = [
   },
 
   {
-    title: "ToDo List App",
-    image: todoListImage,
+    title: "food ordering",
+    image: food,
     description:
-      "A clean and minimal MERN-based to-do app that allows users to manage daily tasks with create, update, and delete functionality.",
+      "A modern food ordering platform where users can explore dishes, view detailed descriptions, add items to the cart, and place orders with smooth UI interactions. Integrated with Firebase authentication for secure login and Strapi backend for order storage.",
     highlights: [
-      "Create, edit, delete tasks",
-      "Task completion tracking",
-      "MongoDB persistent storage",
-      "Fast and lightweight UI",
+      "Category-based food browsing",
+      "Cart system with quantity management",
+      "Order placement with backend sync",
+      "Firebase authentication (Login & Register)",
+      "Mobile-first responsive design"
     ],
-    techStack: ["MongoDB", "Express.js", "React.js", "Node.js","CSS"],
-    demoLink: "https://to-do-arsh.netlify.app/",
-    frontEndCode: "https://github.com/Arsathali-L/to-do-frontend.git",
-    backEndCode: "https://github.com/Arsathali-L/to-do-backend.git",
+    techStack: ["MongoDB", "Express.js", "React.js", "Node.js", "firebase","stripe","tailwindcss"],
+    demoLink: "https://foodarsh.netlify.app/",
+    frontEndCode: "https://github.com/Arsathali-L/food-front.git",
+    backEndCode: "https://github.com/Arsathali-L/server.git",
   },
 
-  {
-    title: "Expense Tracker App",
-    image: expenseTrackerImage,
-    description:
-      "A secure finance tracker that allows users to add, delete, and view income/expense transactions.",
-    highlights: [
-      "Add income & expense entries",
-      "Auto calculation of totals",
-      "JWT-secured routes",
-      "Responsive & simple UI",
-    ],
-    techStack: ["MongoDB", "Express.js", "React.js", "Node.js","CSS","JWT"],
-    demoLink: "https://expense-tracker-arsh.netlify.app/",
-    frontEndCode: "https://github.com/Arsathali-L/frontend.git",
-    backEndCode: "https://github.com/Arsathali-L/backend.git",
-  },
-
-  {
-    title: "Movie Search App",
-    image: chatAppImage,
-    description:
-      "Developed a real-time movie search app using the OMDB API and React. Includes search, filtering, and a responsive UI.",
-    highlights: [
-      "Instant movie search",
-      "OMDB API integration",
-      "Responsive clean UI",
-      "State management using hooks",
-    ],
-    techStack: ["React.js", "API", "TailwindCss"],
-    demoLink: "https://arshathmoviesearch.netlify.app/",
-    frontEndCode: "https://github.com/Arsathali-L/React-movie.git",
-    backEndCode: "https://github.com/Arsathali-L/React-movie.git",
-  },
-
-  // {
-  //   title: "e-Commerce App",
-  //   image: authAppImage,
-  //   description:
-  //     "Created a responsive e-commerce UI using React and React Router with product listing and shopping cart functionality.",
-  //   highlights: [
-  //     "Product listing grid",
-  //     "Cart functionality",
-  //     "Add/Remove items",
-  //     "Client-side routing",
-  //   ],
-  //   techStack: ["tailwindcss", "React.js", "API"],
-  //   demoLink: "https://alibabashoping1.netlify.app/",
-  //   frontEndCode: "https://github.com/Arsathali-L/React-1.git",
-  //   backEndCode: "https://github.com/Arsathali-L/React-1.git",
-  // },
+  
 ];
 
 const Projects = () => {
